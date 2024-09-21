@@ -1,27 +1,28 @@
-
 import rpg.entities.Player;
 import rpg.entities.Enemy;
 import rpg.entities.game;
 import rpg.entities.Stats;
 
-import rpg.entities.Stats;
 
-public static void main(String[] args) {
-        // Crear un jugador y un enemigo
-        Player player = new Player("Heroe");
-        Enemy enemy = new Enemy("Dragon");
+        public static void main(String[] args) {
+                // Crear un jugador y un enemigo
+                Player player = new Player("Julian");
+                Enemy enemy = new Enemy("Ares");
 
-        // Establecer algunas estadísticas
-        player.setStat(Stats.ATTACK, 50);
-        player.setStat(Stats.HP, 100);
+                // Establecer algunas estadísticas
+                player.setStat(Stats.ATTACK, 100);
+                player.setStat(Stats.HP, 200);
+                player.setStat(Stats.DEFENSE, 250);
 
-        enemy.setStat(Stats.ATTACK, 40);
-        enemy.setStat(Stats.HP, 120);
+                enemy.setStat(Stats.ATTACK, 20);
+                enemy.setStat(Stats.HP, 1200);
+                enemy.setStat(Stats.DEFENSE, 600);
 
-        // Crear el juego
-        game game = new game(player, enemy);
+                // Crear el juego
+                game game = new game(player, enemy);
 
-        // Iniciar el juego
-        game.startGame();
-    }
+                // Iniciar el juego
+                game.startGame();
+        }
+
 
