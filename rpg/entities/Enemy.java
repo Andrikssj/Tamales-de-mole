@@ -1,9 +1,7 @@
 package rpg.entities;
-
 import java.util.HashMap;
 
 public class Enemy {
-import java.util.HashMap;
 
         private String name;
         private HashMap<Stats, Integer> stats;

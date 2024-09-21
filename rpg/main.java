@@ -1,4 +1,8 @@
-package rpg;
+
+import rpg.entities.Player;
+import rpg.entities.Enemy;
+import rpg.entities.game;
+import rpg.entities.Stats;
 
 import rpg.entities.Stats;
 
@@ -15,7 +19,7 @@ public static void main(String[] args) {
         enemy.setStat(Stats.HP, 120);
 
         // Crear el juego
-        Game game = new Game(player, enemy);
+        game game = new game(player, enemy);
 
         // Iniciar el juego
         game.startGame();
