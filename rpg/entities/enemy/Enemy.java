@@ -5,19 +5,14 @@ import rpg.enums.Stats;
 
 import java.util.HashMap;
 
-public class Enemy {
+public class Enemy extends GameCharacter{
     protected String name;
     protected HashMap<Stats, Integer> stats;
 
     public Enemy(String name) {
         this.name = name;
         this.stats = new HashMap<>();
-        this.stats.put(Stats.MAX_HP, 100);
-        this.stats.put(Stats.HP, 100);
-        this.stats.put(Stats.MAX_MP, 50);
-        this.stats.put(Stats.MP, 50);
-        this.stats.put(Stats.ATTACK, 10);
-        this.stats.put(Stats.DEFENSE, 5);
+
     }
 
 
@@ -41,21 +36,23 @@ public class Enemy {
     }
 
 
-    public void attack(Player player) {
+    public void attack(GameCharacter enemy) {
         int attackPower = this.stats.get(Stats.ATTACK);
-        int playerDefense = player.getStat(Stats.DEFENSE);
-        int damage = Math.max(attackPower - playerDefense, 40); // Evitar daño negativo
-        int playerHP = player.getStat(Stats.HP) - damage;
-        player.setStat(Stats.HP, playerHP);
-        System.out.println(name + " inflige " + damage + " de daño a " + player.getName() + ". HP restante del jugador: " + playerHP);
-    }
-    public boolean isAlive() {
-        Integer hp = this.stats.get(Stats.HP);
-        return hp != null && hp > 0;
+        int targetDefense = enemy.getStat(Stats.DEFENSE);
+        int damage = Math.max(attackPower - targetDefense, attackPower); // Evitar daño negativo
+        int enemyHP =enemy.getStat(Stats.HP) - damage;
+        enemy.setStat(Stats.HP, enemyHP);
+        System.out.println(name + " inflige " + damage + " de daño a " + enemy.getName() + ". HP restante del objetivo: " + enemyHP);
     }
 
-    public void attack(GameCharacter enemy) {
+    public boolean isAlive() {
+            Integer hp = this.stats.get(Stats.HP);
+            return hp != null && hp > 0;
+
     }
+
+
+
 }
 
 

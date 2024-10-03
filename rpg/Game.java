@@ -19,11 +19,12 @@ public class Game {
     }
 
     public Game() {
-        this.player = new Player("Player");
-        int enemyType = new Random().nextInt(3) + 1;        this.enemy = switch (enemyType) {
+        this.player = new Player("Odin");
+        int enemyType = new Random().nextInt(3) + 1;
+        this.enemy = switch (enemyType) {
             case 1 -> new RookieGoblin();
-            case 2 -> new BasicSlime();
-            default -> new Enemy("some enemy name");
+            case 2 -> new BasicSlime("Basic Slime");
+            default -> new Enemy("Otro enemigo");
         };
     }
 

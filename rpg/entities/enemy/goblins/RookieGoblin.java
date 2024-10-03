@@ -1,23 +1,21 @@
 package rpg.entities.enemy.goblins;
 
 import rpg.entities.GameCharacter;
-import rpg.entities.Player;
 import rpg.entities.enemy.Enemy;
 import rpg.enums.Stats;
 
-import java.util.HashMap;
+
 import java.util.Random;
 
 public class RookieGoblin extends Enemy {
-    private HashMap<String, Integer> stats;
     public RookieGoblin() {
-        super("Basic Slime");
-        stats = new HashMap<>();
+        super("Rookie Goblin");
         this.name = "Rookie Goblin";
-        stats.put(Stats.MAX_HP.name(), 35);
-        this.stats.put(String.valueOf(Stats.HP), 35);
-        this.stats.put(String.valueOf(Stats.ATTACK), 6);
-        stats.put(Stats.DEFENSE.name(), 2);
+        this.stats.put(Stats.MAX_HP, 90);
+        this.stats.put(Stats.HP, 500);
+        this.stats.put(Stats.ATTACK, 30);
+        this.stats.put(Stats.DEFENSE, 10);
+
     }
     private void throwRock(GameCharacter enemy) {
         int damage = (int) (this.stats.get(Stats.ATTACK) * 0.8);
