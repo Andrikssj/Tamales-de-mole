@@ -1,4 +1,7 @@
 package rpg.entities;
+import rpg.entities.enemy.Enemy;
+import rpg.enums.Stats;
+
 import java.util.HashMap;
 
 
@@ -30,6 +33,9 @@ public class Player {
 
     public int getStat(Stats stat) {
         return stats.getOrDefault(stat, 0);
+    }
+    public boolean isAlive() {
+        return this.stats.get(Stats.HP) > 0;
     }
 }
 
