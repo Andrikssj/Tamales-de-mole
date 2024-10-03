@@ -9,9 +9,15 @@ public class Player {
     private String name;
     private HashMap<Stats, Integer> stats;
 
-    public Player(String name) {
-        this.name = name;
+    public Player(String Odin) {
+        this.name = Odin;
         this.stats = new HashMap<>();
+        this.stats.put(Stats.HP, 100);
+        this.stats.put(Stats.MAX_HP, 100);
+        this.stats.put(Stats.MAX_MP, 50);
+        this.stats.put(Stats.MP, 50);
+        this.stats.put(Stats.ATTACK, 10);
+        this.stats.put(Stats.DEFENSE, 5);
     }
 
     public String getName() {
@@ -35,7 +41,8 @@ public class Player {
         return stats.getOrDefault(stat, 0);
     }
     public boolean isAlive() {
-        return this.stats.get(Stats.HP) > 0;
+        Integer hp = this.stats.get(Stats.HP);
+        return hp != null && hp > 0;
     }
 }
 

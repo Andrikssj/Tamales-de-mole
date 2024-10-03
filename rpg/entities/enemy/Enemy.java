@@ -20,9 +20,6 @@ public class Enemy {
         this.stats.put(Stats.DEFENSE, 5);
     }
 
-    public Enemy() {
-
-    }
 
     public String getName() {
         return name;
@@ -53,7 +50,8 @@ public class Enemy {
         System.out.println(name + " inflige " + damage + " de daño a " + player.getName() + ". HP restante del jugador: " + playerHP);
     }
     public boolean isAlive() {
-        return this.stats.get(Stats.HP) > 0;
+        Integer hp = this.stats.get(Stats.HP);
+        return hp != null && hp > 0;
     }
 
     public void attack(GameCharacter enemy) {

@@ -11,13 +11,13 @@ import java.util.Random;
 public class RookieGoblin extends Enemy {
     private HashMap<String, Integer> stats;
     public RookieGoblin() {
-
-        super();
+        super("Basic Slime");
+        stats = new HashMap<>();
         this.name = "Rookie Goblin";
-        this.stats.put(String.valueOf(Stats.MAX_HP), 35);
+        stats.put(Stats.MAX_HP.name(), 35);
         this.stats.put(String.valueOf(Stats.HP), 35);
         this.stats.put(String.valueOf(Stats.ATTACK), 6);
-        this.stats.put(String.valueOf(Stats.DEFENSE), 2);
+        stats.put(Stats.DEFENSE.name(), 2);
     }
     private void throwRock(GameCharacter enemy) {
         int damage = (int) (this.stats.get(Stats.ATTACK) * 0.8);

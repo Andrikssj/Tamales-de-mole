@@ -23,7 +23,7 @@ public class Game {
         int enemyType = new Random().nextInt(3) + 1;        this.enemy = switch (enemyType) {
             case 1 -> new RookieGoblin();
             case 2 -> new BasicSlime();
-            default -> new Enemy();
+            default -> new Enemy("some enemy name");
         };
     }
 
@@ -36,9 +36,9 @@ public class Game {
         }
 
         if (player.isAlive()) {
-            System.out.println(player.getName() + " wins!");
+            System.out.println(player.getName() + " GANO el mas perro");
         } else {
-            System.out.println(enemy.getName() + " wins!");
+            System.out.println(enemy.getName() + " Ganooooo ");
         }
     }
 }

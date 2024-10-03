@@ -4,14 +4,16 @@ import rpg.entities.GameCharacter;
 import rpg.entities.enemy.Enemy;
 import rpg.enums.Stats;
 
+import java.util.HashMap;
 
 
 public class BasicSlime extends Enemy {
 
     public BasicSlime() {
-        super();
+        super("Basic Slime");
         this.stats = stats;
         this.name = "Basic Slime";
+        this.stats = new HashMap<>();
         this.stats.put(Stats.MAX_HP, 30);
         this.stats.put(Stats.HP, 30);
         this.stats.put(Stats.ATTACK, 10);
