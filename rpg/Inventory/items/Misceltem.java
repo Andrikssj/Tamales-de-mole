@@ -16,11 +16,16 @@ class MisceItem extends Item{
         this.descripcion = descripcion;
         this.precio = precio;
     }
-    public String getdescripcion(){
+ public String toString(){
+        return "Item: " + getNombre() + "Descripcion: "+ descripcion + "Precio: " + precio;
+ }
+
+ public String getDescripcion(){
         return descripcion;
-    }
-    public String getPrecio(){
+ }
+
+ public String getPrecio(){
         return precio;
-    }
+ }
 
 }

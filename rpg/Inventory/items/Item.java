@@ -29,5 +29,9 @@ public abstract class Item{
     public ItemType getTipo(){
         return tipo;
     }
+
+    public String toString(){
+        return nombre + "(" + tipo + ")";
+    }
 }
 

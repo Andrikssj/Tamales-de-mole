@@ -13,7 +13,7 @@ public class Inventory {
      * Constructor que inicializa la lista de items
      */
     public Inventory() {
-        items = new ArrayList<>();
+        this.items = new ArrayList<>();
     }
 
     /**
@@ -21,13 +21,19 @@ public class Inventory {
      */
     public void addItem(Item item) {
         items.add(item);
-        System.out.println(item.getNombre() + "Ha sigo añadido al inventario ");
+        System.out.println(item.getNombre() + "ha sigo añadido al inventario ");
     }
 
+    /**
+     * Método para retirar item del inventario
+     */
     public void removeItem(Item item) {
-        items.remove(item);
-        System.out.println(item.getNombre() + "Se ha retirado del inventario ");
+        if (items.remove(item)){
+            System.out.println(item.getNombre() + "se ha retirado del inventario ");
+        } else {
+            System.out.println(item.getNombre() + "no se encontro el inventario ");
 
+        }
     }
 
     /**
@@ -35,13 +41,25 @@ public class Inventory {
      */
     public void showInventory(){
         if (items.isEmpty()){
-            System.out.println("El inventario esta vacio");
+            System.out.println("El inventario esta vacio ");
         } else {
             System.out.println("Inventario: ");
             for (Item item : items){
-                System.out.println(" " + item.getNombre() + "(" + item.getTipo() + ")");
+                System.out.println(" " + item.toString());
             }
         }
+    }
+
+    public void printItems() {
+        if (items.isEmpty()){
+            System.out.println("El inventario esta vacio ");
+        } else {
+            System.out.println("Items en el inventario: ");
+            for (Item item : items){
+                System.out.println(item.toString());
+            }
+        }
+
     }
 }
 
