@@ -6,6 +6,7 @@ import rpg.entities.Player;
 import rpg.entities.enemy.Enemy;
 import rpg.entities.enemy.goblins.RookieGoblin;
 import rpg.entities.enemy.slimes.BasicSlime;
+import rpg.gui.GUIForm;
 
 
 import java.util.Random;
@@ -20,6 +21,7 @@ public class Game {
     public static void main(String[] args) {
         Game game = new Game();
         game.startGame();
+        new GUIForm();
     }
 
     public Game() {
@@ -91,4 +93,7 @@ public class Game {
         System.out.println("Items en el inventario:");
         inventory.printItems();
     }
-}
+
+        }
+
+
