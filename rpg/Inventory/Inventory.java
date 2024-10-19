@@ -21,7 +21,7 @@ public class Inventory {
      */
     public void addItem(Item item) {
         items.add(item);
-        System.out.println(item.getNombre() + "ha sigo añadido al inventario ");
+        System.out.println(item.getNombre() + "ha sido añadido al inventario ");
     }
 
     /**
