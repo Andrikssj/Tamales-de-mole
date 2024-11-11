@@ -1,9 +1,23 @@
 package rpg.gui;
 
+import rpg.enums.BarType;
+import rpg.gui.labels.BarLabel;
+import rpg.gui.panels.BottomPanel;
+import rpg.gui.panels.MiddlePanel;
+import rpg.gui.panels.TopPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class GUIForm extends JFrame implements WindowConstants {
+    private JPanel topPanel;
+    private JPanel middlePanel;
+    private JPanel bottomPanel;
+    private JButton button1;
+    private BarLabel magicLabel;
+    private BarLabel lifeLabel;
+    private BarLabel expLabel;
+
 
     private JPanel mainPanel;
     private JPanel statusBar;
@@ -48,7 +62,7 @@ public class GUIForm extends JFrame implements WindowConstants {
         gamePanel.setBackground(Color.GREEN); // Color de fondo para distinguir la sección
         gamePanel.setPreferredSize(new Dimension(WINDOW_SIZE.width, 370));
 
-        // Cargar y redimensionar imagen para el panel de juego
+        // Cargar y redimensionar image para el panel de juego
         ImageIcon imgGamePanel = new ImageIcon("rpg/gui/images/Background 2.jpg"); // Ajusta la ruta a tu imagen
         Image scaledGamePanelImage = imgGamePanel.getImage().getScaledInstance(WINDOW_SIZE.width, 370, Image.SCALE_SMOOTH);
         JLabel labelGamePanel = new JLabel(new ImageIcon(scaledGamePanelImage));
@@ -71,4 +85,16 @@ public class GUIForm extends JFrame implements WindowConstants {
         mainPanel.add(actionBar, BorderLayout.SOUTH);
     }
 
-}
+    private void createUIComponents() {
+            topPanel = new TopPanel();
+            middlePanel = new MiddlePanel();
+            bottomPanel = new BottomPanel();
+
+            // Otros componentes de la interfaz
+            lifeLabel = new BarLabel(100, 100, BarType.LIFE);
+            magicLabel = new BarLabel(30, 100, BarType.MAGIC);
+            expLabel = new BarLabel(0, 350, BarType.EXPERIENCE);
+        }
+          ;// TODO: place custom component creation code here
+    }
+

@@ -22,7 +22,9 @@ public class Game {
         Game game = new Game();
         game.startGame();
         new GUIForm();
+
     }
+
 
     public Game() {
         this.player = new Player("Odin");
@@ -93,6 +95,7 @@ public class Game {
         System.out.println("Items en el inventario:");
         inventory.printItems();
     }
+
 
         }
 
