@@ -1,5 +1,4 @@
-package rpg.Inventory.items;
-import rpg.enums.ItemType;
+package rpg.items;
 
 public class Antidoto extends MisceItem{
 

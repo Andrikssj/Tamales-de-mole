@@ -7,7 +7,7 @@ import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class BaseButton extends JButton {
+public abstract class BaseButton extends JButton {
 
     private Color backgroundColor = Color.LIGHT_GRAY;
     private Color hoverColor = Color.GRAY;
@@ -76,4 +76,6 @@ public class BaseButton extends JButton {
         this.font = font;
         super.setFont(font);
     }
+
+    protected abstract void initIcons();
 }

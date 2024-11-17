@@ -1,4 +1,4 @@
-package unitec.rpg.utils.cache;
+package rpg.gui.ui;
 
 import rpg.utils.cache.FontLoader;
 

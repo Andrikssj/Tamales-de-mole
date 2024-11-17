@@ -1,6 +1,5 @@
-package rpg.gui;
+package rpg.gui.windows;
 
-import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 

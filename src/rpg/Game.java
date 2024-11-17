@@ -1,7 +1,7 @@
 package rpg;
 
 import rpg.Inventory.Inventory;
-import rpg.Inventory.items.*;
+import rpg.items.*;
 import rpg.entities.Player;
 import rpg.entities.enemy.Enemy;
 import rpg.entities.enemy.goblins.RookieGoblin;

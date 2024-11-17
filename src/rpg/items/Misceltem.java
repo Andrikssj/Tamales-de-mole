@@ -1,4 +1,4 @@
-package rpg.Inventory.items;
+package rpg.items;
 import  rpg.enums.ItemType;
 
 /**

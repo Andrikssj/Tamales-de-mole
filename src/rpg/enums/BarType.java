@@ -16,8 +16,8 @@ public enum BarType {
     BarType() {
         switch (this) {
             case LIFE -> {
-                container = ImageCache.addImage("life_container", "bars/life_container.png");
-                icon = ImageCache.addImage("life_icon", "bars/life_icon.png");
+                container = ImageCache.addImage("life_container", "bars/img.png");
+                icon = ImageCache.addImage("life_icon", "bars/LIFE ICON.jpg");
                 bar = ImageCache.addImage("life_bar", "bars/life_bar.png");
             }
             case MAGIC -> {
@@ -26,6 +26,7 @@ public enum BarType {
             case EXPERIENCE -> {
                 // Se cargan las imágenes para la barra de experiencia
             }
+            default -> throw new IllegalStateException("Unexpected value: " + this);
         }
     }
 

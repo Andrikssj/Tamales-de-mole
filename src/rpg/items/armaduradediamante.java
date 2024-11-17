@@ -1,4 +1,4 @@
-package rpg.Inventory.items;
+package rpg.items;
 
 /**
  * Clase armaduradediamante que herda de armadura
