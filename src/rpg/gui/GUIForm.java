@@ -52,7 +52,7 @@ public class GUIForm extends JFrame implements WindowConstants {
         statusBar.setPreferredSize(new Dimension(WINDOW_SIZE.width, 150));
 
         // Cargar y redimensionar imagen para la barra de estado
-        ImageIcon imgStatusBar = new ImageIcon("rpg/gui/images/Background 1.jpg"); // Ajusta la ruta a tu imagen
+        ImageIcon imgStatusBar = new ImageIcon("Background 1.jpg"); // Ajusta la ruta a tu imagen
         Image scaledStatusBarImage = imgStatusBar.getImage().getScaledInstance(WINDOW_SIZE.width, 150, Image.SCALE_SMOOTH);
         JLabel labelStatusBar = new JLabel(new ImageIcon(scaledStatusBarImage));
         statusBar.add(labelStatusBar); // Agregar imagen al panel de la barra de estado
@@ -63,7 +63,7 @@ public class GUIForm extends JFrame implements WindowConstants {
         gamePanel.setPreferredSize(new Dimension(WINDOW_SIZE.width, 370));
 
         // Cargar y redimensionar image para el panel de juego
-        ImageIcon imgGamePanel = new ImageIcon("rpg/gui/images/Background 2.jpg"); // Ajusta la ruta a tu imagen
+        ImageIcon imgGamePanel = new ImageIcon("Background 2.jpg"); // Ajusta la ruta a tu imagen
         Image scaledGamePanelImage = imgGamePanel.getImage().getScaledInstance(WINDOW_SIZE.width, 370, Image.SCALE_SMOOTH);
         JLabel labelGamePanel = new JLabel(new ImageIcon(scaledGamePanelImage));
         gamePanel.add(labelGamePanel); // Agregar imagen al panel de juego
@@ -74,7 +74,7 @@ public class GUIForm extends JFrame implements WindowConstants {
         actionBar.setPreferredSize(new Dimension(WINDOW_SIZE.width, 340));
 
         // Cargar y redimensionar imagen para la barra de acción
-        ImageIcon imgActionBar = new ImageIcon("rpg/gui/images/Background 3.jpg"); // Ajusta la ruta a tu imagen
+        ImageIcon imgActionBar = new ImageIcon("Background 3.jpg"); // Ajusta la ruta a tu imagen
         Image scaledActionBarImage = imgActionBar.getImage().getScaledInstance(WINDOW_SIZE.width, 340, Image.SCALE_SMOOTH);
         JLabel labelActionBar = new JLabel(new ImageIcon(scaledActionBarImage));
         actionBar.add(labelActionBar); // Agregar imagen al panel de la barra de acción

@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class ImageCache {
 
-    private static final String IMAGE_PATH = "image";
+    private static final String IMAGE_PATH = "images/";
     private static final Map<String, BufferedImage> CACHE = new HashMap<>();
 
     public static BufferedImage addImage(String name, String path) {

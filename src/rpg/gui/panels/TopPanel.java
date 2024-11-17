@@ -5,14 +5,14 @@ import rpg.utils.cache.ImageCache;
 
 import javax.swing.*;
 
-public class BottomPanel extends BackgroundPanel {
+public class TopPanel extends BackgroundPanel {
 
     @Override
     protected void init() {
         // Buscamos la imagen por ahora directamente en los directorios
-        backgroundImage = new ImageIcon(ImageCache.addImage("bottomPanel",
-                "panels/battlePanel.png"));
-        setDimension(WindowConstants.MIDDLE_DIMENSION);
+        backgroundImage = new ImageIcon(ImageCache.addImage("topPanel",
+                "Background 1.jpg"));
+        setDimension(WindowConstants.TOP_DIMENSION);
         setBorder(WindowConstants.EMPTY_BORDER);
     }
 }
