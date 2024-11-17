@@ -31,6 +31,11 @@ public class ImageButton extends BaseButton {
         }
     }
 
+    @Override
+    protected void initIcons() {
+
+    }
+
     private boolean isHover() {
         // Puedes añadir lógica aquí para detectar el estado hover, o usar un MouseAdapter
         return getModel().isRollover();

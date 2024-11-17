@@ -1,5 +1,10 @@
 package rpg.gui;
 
+import rpg.gui.buttons.AttackButton;
+import rpg.gui.panels.BottomPanel;
+import rpg.gui.panels.MiddlePanel;
+import rpg.gui.panels.TopPanel;
+
 import javax.swing.*;
 
 public class MainWindow extends JFrame {
@@ -57,6 +62,11 @@ public class MainWindow extends JFrame {
      * "Custom Create", deberemos que especificar como se creara en esta función.
      */
     private void createUIComponents() {
+
+            topPanel = new TopPanel();
+            middlePanel = new MiddlePanel();
+            bottomPanel = new BottomPanel();
+            button1 = new AttackButton();
         // Creamos el contenido personalizado de la ventana
     };
 }

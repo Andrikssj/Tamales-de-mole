@@ -1,12 +1,14 @@
 package rpg.gui;
 
+import rpg.gui.ui.FontCache;
+
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
 public interface UIConstants {
-    Font FONT = unitec.rpg.utils.cache.FontCache.addFont("PIXM", "fonts/M6X.ttf");
-    Font BAR_LABEL_FONT = unitec.rpg.utils.cache.FontCache.addFont("PAE", "fonts/PixelAE.ttf").deriveFont(16f);
-    Font LABEL_FONT = unitec.rpg.utils.cache.FontCache.addFont("Retron", "fonts/Retron2000.ttf").deriveFont(Font.BOLD,18f);
+    Font FONT = FontCache.addFont("PIXM", "fonts/CourierPrime-Bold.ttf");
+    Font BAR_LABEL_FONT = FontCache.addFont("PAE", "fonts/CourierPrime-Italic.ttf").deriveFont(16f);
+    Font LABEL_FONT = FontCache.addFont("Retron", "fonts/CourierPrime-Regular.ttf").deriveFont(Font.BOLD,18f);
     int WINDOW_WIDTH = 1500;
     int TOP_HEIGHT = 150;
     int MIDDLE_HEIGHT = 320;

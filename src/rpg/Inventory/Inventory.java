@@ -1,5 +1,5 @@
 package rpg.Inventory;
-import rpg.Inventory.items.Item;
+import rpg.items.Item;
 import java.util.ArrayList;
 import java.util.List;
 

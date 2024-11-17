@@ -5,6 +5,7 @@ import rpg.gui.labels.BarLabel;
 import rpg.gui.panels.BottomPanel;
 import rpg.gui.panels.MiddlePanel;
 import rpg.gui.panels.TopPanel;
+import rpg.gui.windows.WindowConstants;
 
 import javax.swing.*;
 import java.awt.*;
@@ -38,6 +39,8 @@ public class GUIForm extends JFrame implements WindowConstants {
         // Crear y configurar las secciones
         createSections();
 
+        createUIComponents();
+
         // Establecer el panel principal como contenido de la ventana
         setContentPane(mainPanel);
 
@@ -52,10 +55,9 @@ public class GUIForm extends JFrame implements WindowConstants {
         statusBar.setPreferredSize(new Dimension(WINDOW_SIZE.width, 150));
 
         // Cargar y redimensionar imagen para la barra de estado
-        ImageIcon imgStatusBar = new ImageIcon("Background 1.jpg"); // Ajusta la ruta a tu imagen
-        Image scaledStatusBarImage = imgStatusBar.getImage().getScaledInstance(WINDOW_SIZE.width, 150, Image.SCALE_SMOOTH);
-        JLabel labelStatusBar = new JLabel(new ImageIcon(scaledStatusBarImage));
-        statusBar.add(labelStatusBar); // Agregar imagen al panel de la barra de estado
+; // Ajusta la ruta a tu imagen
+
+// Agregar imagen al panel de la barra de estado
 
         // Panel de Juego (370 px de altura)
         gamePanel = new JPanel();

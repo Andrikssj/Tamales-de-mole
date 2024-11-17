@@ -1,4 +1,4 @@
-package rpg.Inventory.items;
+package rpg.items;
 
 public class Pocion extends MisceItem {
     public Pocion(){

@@ -1,5 +1,5 @@
-package rpg.Inventory.items;
-import rpg.enums.ItemType;
+package rpg.items;
+
 public class Mapa extends MisceItem {
     public Mapa(){
         super("Mapa ", "Muestra todas las ubicaciones "," $50");
