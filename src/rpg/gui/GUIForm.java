@@ -28,13 +28,9 @@ public class GUIForm extends JFrame implements WindowConstants {
     public GUIForm() {
         // Configurar la ventana
         setTitle("RPG Game");
-        setSize(WINDOW_SIZE);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
-
-        // Crear panel principal con BorderLayout
-        mainPanel = new JPanel(new BorderLayout());
 
         // Crear y configurar las secciones
         createSections();
@@ -43,6 +39,7 @@ public class GUIForm extends JFrame implements WindowConstants {
 
         // Establecer el panel principal como contenido de la ventana
         setContentPane(mainPanel);
+        pack();
 
         // Hacer visible la ventana
         setVisible(true);
@@ -80,11 +77,6 @@ public class GUIForm extends JFrame implements WindowConstants {
         Image scaledActionBarImage = imgActionBar.getImage().getScaledInstance(WINDOW_SIZE.width, 340, Image.SCALE_SMOOTH);
         JLabel labelActionBar = new JLabel(new ImageIcon(scaledActionBarImage));
         actionBar.add(labelActionBar); // Agregar imagen al panel de la barra de acción
-
-        // Añadir las secciones al panel principal
-        mainPanel.add(statusBar, BorderLayout.NORTH);
-        mainPanel.add(gamePanel, BorderLayout.CENTER);
-        mainPanel.add(actionBar, BorderLayout.SOUTH);
     }
 
     private void createUIComponents() {
@@ -96,6 +88,7 @@ public class GUIForm extends JFrame implements WindowConstants {
             lifeLabel = new BarLabel(100, 100, BarType.LIFE);
             magicLabel = new BarLabel(30, 100, BarType.MAGIC);
             expLabel = new BarLabel(0, 350, BarType.EXPERIENCE);
+            button1=new JButton("Play");
         }
           ;// TODO: place custom component creation code here
     }

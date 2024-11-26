@@ -13,6 +13,6 @@ public class MiddlePanel extends BackgroundPanel {
         backgroundImage = new ImageIcon(ImageCache.addImage("midPanel",
                 "Background 2.jpg"));
         setDimension(WindowConstants.MIDDLE_DIMENSION);
-        setBorder(WindowConstants.EMPTY_BORDER);
+        setBorder(null);
     }
 }

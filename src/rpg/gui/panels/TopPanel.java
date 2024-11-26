@@ -4,6 +4,8 @@ import rpg.gui.windows.WindowConstants;
 import rpg.utils.cache.ImageCache;
 
 import javax.swing.*;
+import javax.swing.border.LineBorder;
+import java.awt.*;
 
 public class TopPanel extends BackgroundPanel {
 
@@ -13,6 +15,6 @@ public class TopPanel extends BackgroundPanel {
         backgroundImage = new ImageIcon(ImageCache.addImage("topPanel",
                 "Background 1.jpg"));
         setDimension(WindowConstants.TOP_DIMENSION);
-        setBorder(WindowConstants.EMPTY_BORDER);
+        setBorder(null);
     }
 }

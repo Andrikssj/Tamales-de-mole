@@ -4,10 +4,10 @@ import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
 public interface WindowConstants {
-    Dimension MIDDLE_DIMENSION = new Dimension(800, 600);
+    Dimension MIDDLE_DIMENSION = new Dimension(1280, 200);
     Dimension WINDOW_SIZE = new Dimension(1280, 720);
     Insets WINDOW_INSETS = new Insets(10, 10, 10, 10);
-    Dimension TOP_DIMENSION = new Dimension(800, 600); // Ajusta el tamaño según tus necesidades
+    Dimension TOP_DIMENSION = new Dimension(1280, 200); // Ajusta el tamaño según tus necesidades
         /**
          * Ancho de la ventana.
          */
@@ -23,7 +23,7 @@ public interface WindowConstants {
         /**
          * Alto de la parte inferior de la ventana.
          */
-        int BOTTOM_HEIGHT = 350;
+        int BOTTOM_HEIGHT = 320;
         /**
          * Margen simple.
          */
