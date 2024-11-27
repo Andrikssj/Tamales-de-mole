@@ -1,3 +1,5 @@
+package rpg.gui.buttons;
+
 import rpg.gui.buttons.BaseButton;
 
 import javax.swing.ImageIcon;
