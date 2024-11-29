@@ -1,4 +1,4 @@
-package rpg.items;
+package rpg.items.weapons;
 
 /**
  * Clase lanza, que hereda de armas

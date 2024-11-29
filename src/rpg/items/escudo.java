@@ -1,9 +1,11 @@
 package rpg.items;
 
+import rpg.items.armors.Armadura;
+
 /**
  * Clase escudo que herda de armadura
  */
-public class escudo extends Armadura{
+public class escudo extends Armadura {
     public escudo(){
         super("Escudo ",  15);
     }

@@ -1,5 +1,6 @@
-package rpg.items;
+package rpg.items.weapons;
 import rpg.enums.ItemType;
+import rpg.items.Item;
 
 public class Armas extends Item {
     private String daño;

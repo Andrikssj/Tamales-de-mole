@@ -16,17 +16,20 @@ public enum BarType {
     BarType() {
         switch (this) {
             case LIFE -> {
-                container = ImageCache.addImage("life_container", "bars/img.png");
-                icon = ImageCache.addImage("life_icon", "bars/LIFE ICON.jpg");
+                container = ImageCache.addImage("life_container", "bars/life_container.png");
+                icon = ImageCache.addImage("life_icon", "bars/life_icon.png");
                 bar = ImageCache.addImage("life_bar", "bars/life_bar.png");
             }
             case MAGIC -> {
-                // Se cargan las imágenes para la barra de magia
+                container = ImageCache.addImage("magic_container", "bars/magic_container.png");
+                icon = ImageCache.addImage("magic_icon", "bars/magic_icon.png");
+                bar = ImageCache.addImage("magic_bar", "bars/magic_bar.png");
             }
             case EXPERIENCE -> {
-                // Se cargan las imágenes para la barra de experiencia
+                container = ImageCache.addImage("exp_container", "bars/exp_container.png");
+                icon = ImageCache.addImage("exp_icon", "bars/exp_icon.png");
+                bar = ImageCache.addImage("exp_bar", "bars/exp_bar.png");
             }
-            default -> throw new IllegalStateException("Unexpected value: " + this);
         }
     }
 

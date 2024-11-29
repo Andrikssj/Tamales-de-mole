@@ -1,5 +1,6 @@
-package rpg.items;
+package rpg.items.armors;
 import rpg.enums.ItemType;
+import rpg.items.Item;
 
 /**
  * Clase armadura  que hereda de la clase Item

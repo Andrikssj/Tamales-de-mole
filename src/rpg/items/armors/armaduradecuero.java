@@ -1,9 +1,9 @@
-package rpg.items;
+package rpg.items.armors;
 
 /**
  * Clase armaduradecuero que herda de armadura
  */
-public class armaduradecuero extends Armadura{
+public class armaduradecuero extends Armadura {
     public armaduradecuero(){
         super("Armadura de cuero ",  5);
     }

@@ -19,6 +19,15 @@ public class BarLabel extends JLabel {
         initComponents();
     }
 
+    public void updateBar(int value, int maxValue) {
+
+        setMaxValue(maxValue);
+        setBarValue(value);
+        setUI(new BarLabelUI(type));
+        revalidate();
+        repaint();
+    }
+
     public void initComponents() {
 
         setBarValue(barValue);
@@ -30,13 +39,21 @@ public class BarLabel extends JLabel {
         this.barValue = value;
         setText(String.format("%d / %d", value, maxValue));
     }
+
     public int getBarValue() {
         return barValue;
+    }
+
+    public void setMaxValue(int value) {
+        this.maxValue = value;
     }
 
     public int getMaxValue() {
         return maxValue;
     }
 
-    // Otros métodos de la clase como los getters y setters
+    public BarType getType() {
+        return type;
+    }
 }
+

@@ -1,11 +1,10 @@
-package rpg.gui;
+package rpg.gui.windows;
 
 import rpg.enums.BarType;
 import rpg.gui.labels.BarLabel;
 import rpg.gui.panels.BottomPanel;
 import rpg.gui.panels.MiddlePanel;
 import rpg.gui.panels.TopPanel;
-import rpg.gui.windows.WindowConstants;
 
 import javax.swing.*;
 import java.awt.*;

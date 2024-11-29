@@ -6,7 +6,13 @@ import rpg.entities.Player;
 import rpg.entities.enemy.Enemy;
 import rpg.entities.enemy.goblins.RookieGoblin;
 import rpg.entities.enemy.slimes.BasicSlime;
-import rpg.gui.GUIForm;
+import rpg.gui.windows.GUIForm;
+import rpg.items.armors.Armadura;
+import rpg.items.armors.armaduradediamante;
+import rpg.items.weapons.Espada;
+import rpg.items.weapons.hacha;
+import rpg.items.weapons.lanza;
+import rpg.items.weapons.machete;
 
 
 import java.util.Random;

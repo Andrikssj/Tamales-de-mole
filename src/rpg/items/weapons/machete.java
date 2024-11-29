@@ -1,9 +1,9 @@
-package rpg.items;
+package rpg.items.weapons;
 
 /**
  * Clase machete, que hereda de armas
  */
-public class machete extends Armas{
+public class machete extends Armas {
     public machete(){
         super("Machete ", "Arma cuerpo a cuerpo ", " 45");
     }
