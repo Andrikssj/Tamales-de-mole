@@ -1,6 +1,8 @@
-package rpg.items;
+package rpg.items.misc;
 
-public class Llave extends MisceItem{
+import rpg.items.MisceItem;
+
+public class Llave extends MisceItem {
     public Llave(){
         super("Llave ", "Permite abrir cualquier puerta y cualquier caja ", "$75");
     }

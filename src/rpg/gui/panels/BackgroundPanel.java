@@ -33,7 +33,7 @@ public abstract class BackgroundPanel extends JPanel {
      *
      * @param dimension Dimensiones del panel.
      */
-    protected void setDimension(Dimension dimension) {
+    public void setDimension(Dimension dimension) {
         this.dimension = dimension;
         setPreferredSize(dimension);
         setMinimumSize(dimension);

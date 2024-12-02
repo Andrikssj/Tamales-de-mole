@@ -1,6 +1,4 @@
-package rpg.items;
-
-import rpg.items.armors.Armadura;
+package rpg.items.weapons;
 
 /**
  * Clase escudo que herda de armadura

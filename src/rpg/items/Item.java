@@ -1,37 +1,69 @@
 package rpg.items;
+
 import rpg.enums.ItemType;
+import rpg.utils.cache.ImageCache;
+
+import javax.swing.*;
+import java.io.Serializable;
 
 /**
- * CLase abstracta Itemm
+ * The type Item.
  */
-public abstract class Item{
-    private String nombre;
-    private ItemType tipo;
+public abstract class Item implements Serializable {
 
     /**
-     * Constructor que inicializa los atributos
+     * The Name.
      */
-    public Item(String nombre, ItemType tipo){
-        this.nombre = nombre;
-        this.tipo = tipo;
+    protected String name;
+    protected String iconName;
+    /**
+     * The Description.
+     */
+    protected String description;
+    /**
+     * The Price.
+     */
+    protected int price;
+    /**
+     * The Type.
+     */
+    protected ItemType type;
+
+    /**
+     * Constructor de la clase Item. Inicializa los atributos de la clase mediante
+     * la función initItem().
+     */
+    public Item() {
+
+        initItem();
     }
 
     /**
-     * Metodo que devuelve el nombre del item
+     * Función que inicializa los atributos de la clase actual.
+     * Deberá ser implementada y sobreescrita por las clases hijas.
      */
-    public String getNombre(){
-        return nombre;
+    protected abstract void initItem();
+
+    public String getName() {
+        return name;
     }
 
-    /**
-     * Metodo que devuelve el tipo del item
-     */
-    public ItemType getTipo(){
-        return tipo;
+    public String getDescription() {
+        return description;
     }
 
-    public String toString(){
-        return nombre + "(" + tipo + ")";
+    public int getPrice() {
+        return price;
+    }
+
+    public ItemType getType() {
+        return type;
+    }
+
+    public ImageIcon getIcon() {
+        return new ImageIcon(ImageCache
+                .getImage(iconName)
+                .getScaledInstance(32, 32, 0));
     }
 }
 

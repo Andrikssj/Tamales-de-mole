@@ -1,18 +1,15 @@
 package rpg;
 
 import rpg.Inventory.Inventory;
-import rpg.items.*;
 import rpg.entities.Player;
 import rpg.entities.enemy.Enemy;
 import rpg.entities.enemy.goblins.RookieGoblin;
 import rpg.entities.enemy.slimes.BasicSlime;
 import rpg.gui.windows.GUIForm;
-import rpg.items.armors.Armadura;
-import rpg.items.armors.armaduradediamante;
-import rpg.items.weapons.Espada;
-import rpg.items.weapons.hacha;
-import rpg.items.weapons.lanza;
-import rpg.items.weapons.machete;
+import rpg.items.armors.helmet.armaduradediamante;
+import rpg.items.armors.helmet.casco;
+import rpg.items.misc.*;
+import rpg.items.weapons.*;
 
 
 import java.util.Random;
@@ -99,7 +96,6 @@ public class Game {
          *      Imprimir el inventario
          */
         System.out.println("Items en el inventario:");
-        inventory.printItems();
     }
 
 

@@ -1,11 +1,11 @@
-package rpg.items;
+package rpg.items.misc;
 
-import rpg.items.armors.Armadura;
+import rpg.items.armors.Armor;
 
 /**
  * Clase blindaje que herda de armadura
  */
-public class blindaje extends Armadura {
+public class blindaje extends Armor {
     public blindaje(){
         super("Blindaje ",  9);
     }

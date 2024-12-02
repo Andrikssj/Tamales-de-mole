@@ -1,6 +1,8 @@
-package rpg.items;
+package rpg.items.misc;
 
-public class Antidoto extends MisceItem{
+import rpg.items.MisceItem;
+
+public class Antidoto extends MisceItem {
 
     public Antidoto() {
 

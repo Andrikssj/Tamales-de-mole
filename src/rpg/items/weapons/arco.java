@@ -1,6 +1,4 @@
-package rpg.items;
-
-import rpg.items.weapons.Armas;
+package rpg.items.weapons;
 
 /**
  * Clase arco, que hereda de armas
