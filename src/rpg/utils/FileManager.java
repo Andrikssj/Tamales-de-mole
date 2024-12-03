@@ -2,8 +2,6 @@ package rpg.utils;
 
 import rpg.entities.Player;
 
-import javax.swing.*;
-import java.awt.*;
 import java.io.*;
 
 public class FileManager {

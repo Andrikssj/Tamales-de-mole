@@ -2,7 +2,6 @@ package rpg.enums;
 
 import rpg.utils.cache.ImageCache;
 
-import javax.swing.*;
 import java.awt.image.BufferedImage;
 
 public enum BarType {

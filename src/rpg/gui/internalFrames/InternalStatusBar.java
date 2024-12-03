@@ -1,10 +1,10 @@
 package rpg.gui.internalFrames;
 
 import rpg.gui.UIConstants;
-import rpg.gui.ui.StatusBarUI;
 import rpg.gui.panels.CenterPanel;
 import rpg.gui.panels.LeftCornerPanel;
 import rpg.gui.panels.RightCornerPanel;
+import rpg.gui.ui.StatusBarUI;
 
 import javax.swing.*;
 import java.awt.*;

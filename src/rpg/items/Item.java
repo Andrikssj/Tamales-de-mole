@@ -66,4 +66,3 @@ public abstract class Item implements Serializable {
                 .getScaledInstance(32, 32, 0));
     }
 }
-

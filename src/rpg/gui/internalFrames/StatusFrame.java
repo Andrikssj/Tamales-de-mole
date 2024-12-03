@@ -1,14 +1,13 @@
 package rpg.gui.internalFrames;
 
 import rpg.enums.Stats;
-import rpg.gui.MainWindow;
 import rpg.gui.UIConstants;
 import rpg.gui.labels.IconLabel;
 import rpg.gui.labels.NameLabel;
 import rpg.gui.panels.InternPanel;
 import rpg.gui.panels.ItemDisplayPanel;
 import rpg.gui.ui.TransparentFrameUI;
-import rpg.gui.windows. GUIForm;
+import rpg.gui.windows.MainWindow;
 import rpg.utils.cache.ImageCache;
 
 import javax.swing.*;

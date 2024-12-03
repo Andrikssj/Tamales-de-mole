@@ -56,4 +56,3 @@ public class BarLabel extends JLabel {
         return type;
     }
 }
-

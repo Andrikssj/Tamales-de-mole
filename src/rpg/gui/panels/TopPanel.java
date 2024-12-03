@@ -1,11 +1,9 @@
 package rpg.gui.panels;
 
-import rpg.gui.windows.WindowConstants;
+import rpg.gui.UIConstants;
 import rpg.utils.cache.ImageCache;
 
 import javax.swing.*;
-import javax.swing.border.LineBorder;
-import java.awt.*;
 
 public class TopPanel extends BackgroundPanel {
 
@@ -13,8 +11,8 @@ public class TopPanel extends BackgroundPanel {
     protected void init() {
         // Buscamos la imagen por ahora directamente en los directorios
         backgroundImage = new ImageIcon(ImageCache.addImage("topPanel",
-                "Background 1.jpg"));
-        setDimension(WindowConstants.TOP_DIMENSION);
-        setBorder(null);
+                "panels/statusPanel.jpg"));
+        setDimension(UIConstants.TOP_DIMENSION);
+        setBorder(UIConstants.EMPTY_BORDER);
     }
 }

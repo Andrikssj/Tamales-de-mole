@@ -3,11 +3,10 @@ package rpg.entities;
 import rpg.enums.Stats;
 import rpg.enums.WearType;
 import rpg.exceptions.ItemNotFoundException;
-import rpg.Inventory.Inventory;
+import rpg.inventory.Inventory;
 import rpg.items.Equipment;
 import rpg.items.Item;
-import rpg.items.misc.Misc;
-import rpg.items.weapons.Weapon;
+import rpg.items.miscs.Misc;
 import rpg.utils.Randomize;
 
 import javax.swing.*;
@@ -202,6 +201,3 @@ public class Player extends GameCharacter implements Serializable {
         return inventory;
     }
 }
-
-
-

@@ -1,6 +1,6 @@
 package rpg.gui.panels;
 
-import rpg.gui.windows.WindowConstants;
+import rpg.gui.UIConstants;
 import rpg.utils.cache.ImageCache;
 
 import javax.swing.*;
@@ -11,8 +11,7 @@ public class MiddlePanel extends BackgroundPanel {
     protected void init() {
         // Buscamos la imagen por ahora directamente en los directorios
         backgroundImage = new ImageIcon(ImageCache.addImage("midPanel",
-                "Background 2.jpg"));
-        setDimension(WindowConstants.MIDDLE_DIMENSION);
-        setBorder(null);
+                "panels/mainBackground.jpg"));
+        setDimension(UIConstants.MIDDLE_DIMENSION);
     }
 }

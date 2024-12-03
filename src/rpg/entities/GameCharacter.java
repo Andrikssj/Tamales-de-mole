@@ -122,5 +122,3 @@ public abstract class GameCharacter implements Serializable {
         return stats;
     }
 }
-
-

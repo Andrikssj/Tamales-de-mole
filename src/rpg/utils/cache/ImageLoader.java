@@ -6,8 +6,17 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * Clase que se encarga de cargar las imágenes.
+ */
 public class ImageLoader {
 
+    /**
+     * Método que se encarga de cargar una imagen.
+     *
+     * @param path Ruta de la imagen.
+     * @return Imagen.
+     */
     public static BufferedImage loadImage(String path) {
 
         try {

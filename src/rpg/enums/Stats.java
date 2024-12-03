@@ -59,4 +59,3 @@ public enum Stats {
     LEVEL,
     GOLD
 }
-

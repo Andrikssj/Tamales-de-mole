@@ -5,10 +5,13 @@ import rpg.utils.cache.FontCache;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
+/**
+ * Constantes para las dimensiones de las ventanas.
+ */
 public interface UIConstants {
-    Font FONT = FontCache.addFont("PIXM", "fonts/CourierPrime-Bold.ttf");
-    Font BAR_LABEL_FONT = FontCache.addFont("PAE", "fonts/CourierPrime-Italic.ttf").deriveFont(16f);
-    Font LABEL_FONT = FontCache.addFont("Retron", "fonts/CourierPrime-Regular.ttf").deriveFont(Font.BOLD,18f);
+    Font FONT = FontCache.addFont("PIXM", "fonts/M6X.ttf");
+    Font BAR_LABEL_FONT = FontCache.addFont("PAE", "fonts/PixelAE.ttf").deriveFont(16f);
+    Font LABEL_FONT = FontCache.addFont("Retron", "fonts/Retron2000.ttf").deriveFont(Font.BOLD, 18f);
     /**
      * Ancho de la ventana.
      */
