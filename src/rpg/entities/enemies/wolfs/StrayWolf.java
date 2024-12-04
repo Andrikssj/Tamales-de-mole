@@ -19,7 +19,7 @@ public class StrayWolf extends Enemy {
      */
     public StrayWolf() {
         super("Stray Wolf");
-        ImageCache.addImage("stray_wolf", "enemies/wolfs/aloneWolf.png");
+        ImageCache.addImage("stray_wolf", "enemies/Zodiac Taurus.png");
     }
 
     @Override

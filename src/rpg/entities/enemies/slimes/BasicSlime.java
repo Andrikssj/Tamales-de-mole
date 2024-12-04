@@ -20,7 +20,7 @@ public class BasicSlime extends Enemy {
      */
     public BasicSlime() {
         super("Basic Slime");
-        ImageCache.addImage("basic_slime", "enemies/slimes/basic_slime.png");
+        ImageCache.addImage("basic_slime", "enemies/Slime Fireiii.png");
     }
 
     @Override

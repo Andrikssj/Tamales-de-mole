@@ -19,7 +19,7 @@ public class WoodBear extends Enemy {
      */
     public WoodBear() {
         super("Wood Bear");
-        ImageCache.addImage("wood_bear", "enemies/MountainScarbear.png");
+        ImageCache.addImage("wood_bear", "enemies/Corrupted Stone Bear.png");
     }
 
     @Override

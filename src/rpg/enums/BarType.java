@@ -17,7 +17,6 @@ public enum BarType {
             case LIFE -> {
                 container = ImageCache.addImage("life_container", "bars/life_container.png");
                 icon = ImageCache.addImage("life_icon", "bars/life_icon.png");
-                bar = ImageCache.addImage("life_bar", "bars/life_bar.png");
             }
             case MAGIC -> {
                 container = ImageCache.addImage("magic_container", "bars/magic_container.png");
