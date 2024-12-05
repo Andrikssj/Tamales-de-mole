@@ -70,9 +70,9 @@ public class MainWindow extends JFrame {
         inventoryFrame.setLocation((desktopPane.getWidth() - inventoryFrame.getWidth()) / 2,
                 (desktopPane.getHeight() - inventoryFrame.getHeight()) / 2);
         // Añadimos un mensaje al textDisplay de bienvenida
-        appendText("¡Bienvenido a RPG Game!\n");
-        appendText("¡Prepárate para la aventura!\n");
-        appendText("Aparece un nuevo enemigo: " + enemy.getName() + "\n");
+        appendText("¡Te damos la Bienvenida, Juega y gana con nosotros!\n");
+        appendText("¡Vamos a la acción!\n");
+        appendText("Enemigo: " + enemy.getName() + "\n");
     }
 
     private void initComponents() {
@@ -122,9 +122,7 @@ public class MainWindow extends JFrame {
     }
 
     /**
-     * Esta función permite añadir texto al textDisplay.
-     * <p>
-     * **IMPORTANTE**: Esta función se llama desde otras clases.
+     * Permite añadir texto al textDisplay.
      */
     public void appendText(String text) {
 
@@ -135,9 +133,7 @@ public class MainWindow extends JFrame {
     }
 
     /**
-     * Esta función permite intentar huir de un combate.
-     * <p>
-     * **IMPORTANTE**: Esta función se llama desde la clase FleeButton.
+     * Permite intentar huir de un combate.
      */
     public void tryToFlee() {
 
@@ -158,9 +154,7 @@ public class MainWindow extends JFrame {
     }
 
     /**
-     * Esta función permite verificar el estado del juego y actualizar las barras de estado.
-     * <p>
-     * **IMPORTANTE**: Esta función se llama desde la clase AttackButton.
+     * Permite verificar el estado del juego y actualizar las barras de estado.
      */
     public void checkGameStatus() {
 
@@ -224,9 +218,7 @@ public class MainWindow extends JFrame {
     }
 
     /**
-     * Esta función permite actualizar al jugador cuando sube de nivel.
-     * <p>
-     * **IMPORTANTE**: Esta función se llama desde la función checkGameStatus.
+     * Permite actualizar al jugador cuando sube de nivel.
      */
     private void updatePlayer() {
 
@@ -249,11 +241,7 @@ public class MainWindow extends JFrame {
     }
 
     /**
-     * Esta función permite personalizar los componentes de la ventana.
-     * Como por ejemplo usar clases propias que extiendan de JPanel u otros componentes.
-     * <p>
-     * **IMPORTANTE**: Si marcamos algún componente en el editor de diseño como
-     * "Custom Create", deberemos que especificar como se creara en esta función.
+     * Permite personalizar los componentes de la ventana.
      */
     private void createUIComponents() {
 
