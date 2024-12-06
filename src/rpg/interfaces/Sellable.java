@@ -1,12 +1,12 @@
 package rpg.interfaces;
 
 /**
- * The interface Sellable.
+ * La interfaz Sellable.
  */
 public interface Sellable {
 
     /**
-     * Sell.
+     * Vender.
      */
     public void sell();
 }

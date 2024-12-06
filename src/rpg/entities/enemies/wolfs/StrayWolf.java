@@ -10,12 +10,12 @@ import rpg.utils.cache.ImageCache;
 import javax.swing.*;
 
 /**
- * The type Stray wolf.
+ * La clase StrayWolf.
  */
 public class StrayWolf extends Enemy {
 
     /**
-     * Instantiates a new Stray wolf.
+     * Instancia un nuevo StrayWolf.
      */
     public StrayWolf() {
         super("Stray Wolf");
@@ -39,7 +39,7 @@ public class StrayWolf extends Enemy {
     }
 
     /**
-     * Bite.
+     * Mordisco.
      *
      * @param enemy the enemy
      */
@@ -54,7 +54,7 @@ public class StrayWolf extends Enemy {
     }
 
     /**
-     * Claw.
+     * Garras.
      *
      * @param enemy the enemy
      */
@@ -69,7 +69,7 @@ public class StrayWolf extends Enemy {
     }
 
     /**
-     * Slash.
+     * Zarpazo.
      *
      * @param enemy the enemy
      */

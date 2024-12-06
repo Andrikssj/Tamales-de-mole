@@ -8,21 +8,21 @@ import rpg.entities.enemies.wolfs.StrayWolf;
 import rpg.utils.Randomize;
 
 /**
- * The type Game.
+ * La clase Game.
  */
 public class Game {
 
     /**
-     * The Player.
+     * El jugador.
      */
     private Player player;
     /**
-     * The Enemy.
+     * El enemigo.
      */
     private Enemy enemy;
 
     /**
-     * The entry point of application.
+     * El punto de entrada de la aplicación.
      *
      * @param args the input arguments
      */
@@ -32,7 +32,7 @@ public class Game {
     }
 
     /**
-     * Instantiates a new Game.
+     * Instancia un nuevo juego.
      */
     public Game() {
         this.player = new Player("Player");
@@ -46,7 +46,7 @@ public class Game {
     }
 
     /**
-     * Start game.
+     * Comienza el juego.
      */
     public void startGame() {
 

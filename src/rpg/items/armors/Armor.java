@@ -4,7 +4,7 @@ import rpg.enums.ItemType;
 import rpg.items.Equipment;
 
 /**
- * The type Armor.
+ * La clase Armor.
  */
 public abstract class Armor extends Equipment {
 

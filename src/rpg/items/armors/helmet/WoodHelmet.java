@@ -8,7 +8,7 @@ import rpg.utils.cache.ImageCache;
 import java.util.HashMap;
 
 /**
- * The type Wood helmet.
+ * La clase WoodHelmet.
  */
 public class WoodHelmet extends Armor {
 
@@ -25,7 +25,7 @@ public class WoodHelmet extends Armor {
     }
 
     /**
-     * Protect.
+     * Protege.
      */
     public void protect() {
         System.out.println("El casco de madera te protege de un golpe y se rompe.");

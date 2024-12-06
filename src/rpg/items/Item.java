@@ -7,25 +7,25 @@ import javax.swing.*;
 import java.io.Serializable;
 
 /**
- * The type Item.
+ * La clase Item.
  */
 public abstract class Item implements Serializable {
 
     /**
-     * The Name.
+     * El nombre del ítem.
      */
     protected String name;
     protected String iconName;
     /**
-     * The Description.
+     * La descripción del ítem.
      */
     protected String description;
     /**
-     * The Price.
+     * El precio del ítem.
      */
     protected int price;
     /**
-     * The Type.
+     *El tipo del ítem.
      */
     protected ItemType type;
 

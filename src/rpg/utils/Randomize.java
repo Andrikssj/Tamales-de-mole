@@ -1,7 +1,7 @@
 package rpg.utils;
 
 /**
- * The interface Randomize.
+ * La interfaz Randomize.
  */
 public interface Randomize {
 
@@ -17,7 +17,7 @@ public interface Randomize {
     }
 
     /**
-     * Gets random boolean.
+     * Devuelve un valor booleano aleatorio.
      *
      * @return the random boolean
      */

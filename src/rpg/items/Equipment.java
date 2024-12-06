@@ -9,12 +9,12 @@ import java.io.Serializable;
 import java.util.HashMap;
 
 /**
- * The type Equipment.
+ * La clase Equipment.
  */
 public abstract class Equipment extends Item implements Equipable, Serializable {
 
     /**
-     * The Stats.
+     * Los Stats.
      */
     protected HashMap<Stats, Integer> stats;
 

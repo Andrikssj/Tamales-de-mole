@@ -50,7 +50,9 @@ public class StartWindow extends JFrame {
     public void update() {
 
         for (int i = 1; i <= 5; i++) {
-            // Cargamos el nombre de la partida
+            /**
+             * Carga el nombre de la partida en el slot correspondiente.
+             */
             JLabel slotLabel = null;
             String slotName;
             Player player;

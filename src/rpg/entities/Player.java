@@ -14,7 +14,7 @@ import java.io.*;
 import java.util.HashMap;
 
 /**
- * The type Player.
+ * La clase Player.
  */
 public class Player extends GameCharacter implements Serializable {
 
@@ -22,7 +22,7 @@ public class Player extends GameCharacter implements Serializable {
     private HashMap<WearType, Equipment> equipment;
 
     /**
-     * Instantiates a new Player.
+     * Instancia un nuevo jugador.
      *
      * @param name the name
      */

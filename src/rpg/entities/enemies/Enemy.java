@@ -6,17 +6,17 @@ import rpg.enums.EnemyType;
 import javax.swing.*;
 
 /**
- * The type Enemy.
+ * La clase Enemy.
  */
 public abstract class Enemy extends GameCharacter {
 
     /**
-     * The Type.
+     * El tipo de enemigo.
      */
     protected EnemyType type;
 
     /**
-     * Instantiates a new Enemy.
+     * Instancia un nuevo enemigo.
      *
      * @param name the name
      */
@@ -32,7 +32,7 @@ public abstract class Enemy extends GameCharacter {
     public abstract String attack(GameCharacter enemy);
 
     /**
-     * Gets type.
+     * Obtiene el tipo.
      *
      * @return the type
      */

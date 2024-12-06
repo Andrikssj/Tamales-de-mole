@@ -10,11 +10,11 @@ import java.awt.*;
 import java.io.*;
 
 /**
- * The type Inventory test.
+ * La clase InventoryTest.
  */
 public class InventoryTest {
     /**
-     * The entry point of application.
+     * El punto de entrada de la aplicación.
      *
      * @param args the input arguments
      */

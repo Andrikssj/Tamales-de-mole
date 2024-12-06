@@ -20,7 +20,7 @@ public abstract class GameCharacter implements Serializable {
     protected HashMap<Stats, Integer> stats;
 
     /**
-     * Instantiates a new Game character.
+     * Instancia un nuevo personaje de juego.
      *
      * @param name the name
      */
@@ -39,7 +39,7 @@ public abstract class GameCharacter implements Serializable {
     protected abstract void initCharacter();
 
     /**
-     * Is alive boolean.
+     * Indica si está vivo.
      *
      * @return the boolean
      */
@@ -113,7 +113,7 @@ public abstract class GameCharacter implements Serializable {
     }
 
     /**
-     * Gets stats.
+     * Obtiene las estadísticas.
      *
      * @return the stats
      */

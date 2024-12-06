@@ -11,12 +11,12 @@ import rpg.utils.cache.ImageCache;
 import javax.swing.*;
 
 /**
- * The type Basic slime.
+ * La clase BasicSlime.
  */
 public class BasicSlime extends Enemy {
 
     /**
-     * Instantiates a new Basic slime.
+     * Instancia un nuevo BasicSlime.
      */
     public BasicSlime() {
         super("Basic Slime");

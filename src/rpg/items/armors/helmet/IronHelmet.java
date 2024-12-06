@@ -4,12 +4,12 @@ import rpg.enums.Stats;
 import rpg.enums.WearType;
 
 /**
- * The type Iron helmet.
+ * La clase IronHelmet.
  */
 public class IronHelmet extends WoodHelmet {
 
     /**
-     * Instantiates a new Iron helmet.
+     * Instancia un nuevo casco de hierro.
      */
     public IronHelmet() {
 

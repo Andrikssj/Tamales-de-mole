@@ -10,12 +10,12 @@ import rpg.utils.cache.ImageCache;
 import javax.swing.*;
 
 /**
- * The type Wood bear.
+ * La clase WoodBear.
  */
 public class WoodBear extends Enemy {
 
     /**
-     * Instantiates a new Wood bear.
+     * Instancia un nuevo WoodBear.
      */
     public WoodBear() {
         super("Wood Bear");
@@ -52,7 +52,7 @@ public class WoodBear extends Enemy {
     }
 
     /**
-     * Bite.
+     * Mordisco.
      *
      * @param enemy the enemy
      */
@@ -71,7 +71,7 @@ public class WoodBear extends Enemy {
     }
 
     /**
-     * Claw.
+     * Garras.
      *
      * @param enemy the enemy
      */

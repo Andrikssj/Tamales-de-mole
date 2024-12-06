@@ -3,19 +3,19 @@ package rpg.interfaces;
 import rpg.entities.Player;
 
 /**
- * The interface Equipable.
+ * La interfaz Equipable.
  */
 public interface Equipable {
 
     /**
-     * Equip.
+     * Equipar.
      *
      * @param player the player
      */
     public void equip(Player player);
 
     /**
-     * Unequip.
+     * Desequipar.
      *
      * @param player the player
      */

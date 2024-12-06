@@ -27,7 +27,7 @@ public class ItemDisplayPanel extends BackgroundPanel {
 
     @Override
     protected void init() {
-        // Buscamos la imagen por ahora directamente en los directorios
+        //Buscamos la imagen por ahora directamente en los directorios
         backgroundImage = new ImageIcon(ImageCache.addImage("itemDisplayPanel",
                 "labels/equipHolder.png"));
         setDimension(new Dimension(500, 85));

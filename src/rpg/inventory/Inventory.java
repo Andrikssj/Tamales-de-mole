@@ -10,21 +10,21 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * The type Inventory.
+ * La clase Inventory.
  */
 public class Inventory implements Serializable {
 
     /**
-     * The Items.
+     * Los artículos.
      */
     private final ArrayList<Item> items;
     /**
-     * The Capacity.
+     * La capacidad.
      */
     private int capacity;
 
     /**
-     * Instantiates a new Inventory.
+     * Instancia un nuevo Inventario.
      */
     public Inventory() {
         this.capacity = 15;
@@ -32,7 +32,7 @@ public class Inventory implements Serializable {
     }
 
     /**
-     * Add item.
+     * Añadir artículo.
      *
      * @param item the item
      */
@@ -50,7 +50,7 @@ public class Inventory implements Serializable {
     }
 
     /**
-     * Remove item.
+     * Quitar artículo.
      *
      * @param item the item
      */
@@ -63,7 +63,7 @@ public class Inventory implements Serializable {
     }
 
     /**
-     * Gets item.
+     * Obtener artículo.
      *
      * @param index the index
      */
@@ -87,14 +87,14 @@ public class Inventory implements Serializable {
     }
 
     /**
-     * Gets item count.
+     * Obtener item count.
      */
     public int getItemCount() {
         return items.size();
     }
 
     /**
-     * Is full boolean.
+     * Indica si esta lleno.
      *
      * @return the boolean
      */
@@ -104,7 +104,7 @@ public class Inventory implements Serializable {
     }
 
     /**
-     * Is empty boolean.
+     * Indica si esta vacío.
      *
      * @return the boolean
      */
@@ -113,14 +113,14 @@ public class Inventory implements Serializable {
     }
 
     /**
-     * Clear.
+     * Limpia el contenido.
      */
     public void clear() {
         items.clear();
     }
 
     /**
-     * Increase capacity.
+     * Aumenta la capacidad.
      *
      * @param amount the amount
      */
@@ -130,7 +130,7 @@ public class Inventory implements Serializable {
     }
 
     /**
-     * Gets armors.
+     * Obtener armaduras.
      *
      * @return the armors
      */
@@ -146,7 +146,7 @@ public class Inventory implements Serializable {
     }
 
     /**
-     * Gets miscs.
+     * Obtener miscs.
      *
      * @return the miscs
      */
@@ -162,7 +162,7 @@ public class Inventory implements Serializable {
     }
 
     /**
-     * Gets items.
+     * Obtener artículos.
      *
      * @return the items
      */

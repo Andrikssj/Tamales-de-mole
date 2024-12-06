@@ -6,7 +6,7 @@ import rpg.utils.cache.ImageCache;
 import java.io.Serializable;
 
 /**
- * The type Wolf pelt.
+ * La clase WolfPelt.
  */
 public class WolfPelt extends Misc implements Serializable {
 

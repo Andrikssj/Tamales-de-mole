@@ -5,16 +5,16 @@ import rpg.items.Item;
 import java.io.Serializable;
 
 /**
- * The type Misc.
+ * La clase Misc.
  */
 public abstract class Misc extends Item implements Serializable  {
 
     /**
-     * The Consumable.
+     * Indica si es consumible.
      */
     protected boolean consumable;
     /**
-     * The Stackable.
+     * Indica si es apilable.
      */
     protected boolean stackable;
     protected int quantity;
@@ -26,7 +26,7 @@ public abstract class Misc extends Item implements Serializable  {
     }
 
     /**
-     * Use.
+     * Usar.
      */
     public abstract void use();
 
